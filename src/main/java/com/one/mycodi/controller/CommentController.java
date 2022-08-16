@@ -18,7 +18,7 @@ public class CommentController {
         return commentService.createComment(commentRequestDto, httpServletRequest);
     }
 
-    @PutMapping("/mycodi/comments/{id}")
+    @PutMapping("/api/comments/{id}")
     public ResponseDto<?> updateComment(@PathVariable Long id, @RequestBody CommentRequestDto commentRequestDto, HttpServletRequest httpServletRequest) {
         return commentService.updateComment(id, commentRequestDto, httpServletRequest);
     }
